@@ -97,7 +97,7 @@ function parseSDKVersions(content, configurationObject) {
     const minSdkVersionRegEx = /\bminSdkVersion\s*=\s*([0-9]*)$/gm;
     const compileSdkVersionRegEx = /\bcompileSdkVersion\s*=\s*([0-9]*)$/gm;
     const targetSdkVersionRegEx = /\btargetSdkVersion\s*=\s*([0-9]*)$/gm;
-    const newSupportLibVersionRegEx = /\bsupportlibversion\s*=\s*([0-9]*)$/gm;
+    const newSupportLibVersionRegEx = /\bsupportLibVersion\s*=\s*([0-9]*)$/gm;
     const newBuildTools = `buildToolsVersion = "${
       (_a =
         configurationObject === null || configurationObject === void 0
@@ -130,7 +130,7 @@ function parseSDKVersions(content, configurationObject) {
         ? _d
         : Constants.defaultTargetSdkVersion
     }`;
-    const newSupportLibVersion = `supportlibversion = ${
+    const newSupportLibVersion = `supportLibVersion = ${
       (_d =
         configurationObject === null || configurationObject === void 0
           ? void 0
