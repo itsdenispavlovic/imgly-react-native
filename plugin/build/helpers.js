@@ -134,7 +134,7 @@ function parseSDKVersions(content, configurationObject) {
       (_d =
         configurationObject === null || configurationObject === void 0
           ? void 0
-          : configurationObject.supportlibversion) !== null && _d !== void 0
+          : configurationObject.supportLibVersion) !== null && _d !== void 0
         ? _d
         : ""
     }`;
